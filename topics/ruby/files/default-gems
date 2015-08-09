@@ -1,7 +1,7 @@
 bundler
+lunchy
 pry
 pry-remote
 rspec
 cucumber
 thor
-tmuxinator
