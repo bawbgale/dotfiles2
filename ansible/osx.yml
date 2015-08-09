@@ -6,15 +6,7 @@
     - base_osx
     - base_dev
     - zsh
-    - tmux
-    - db
-    - git
     - vim
-    - js
-    - java
+    - git
     - ruby
-    - python
-    - golang
-    - haskell
-    - datascience
-    - rn
+    - db
