@@ -20,7 +20,7 @@
    - config.zsh
    - path.zsh
    - prompt.zsh
-   - xenocid.zsh-theme
+   - bawbgale.zsh-theme
 
 - name: Copy scripts into the bin subfolder
   copy: >
