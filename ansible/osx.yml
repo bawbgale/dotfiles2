@@ -6,7 +6,6 @@
     - base_osx
     - base_dev
     - zsh
-    - vim
     - git
     - ruby
     - db
