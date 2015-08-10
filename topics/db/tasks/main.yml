@@ -11,6 +11,20 @@
     - redis
     - mongodb
 
+- name: Start services at login
+  file: src=/usr/local/opt/{{ item }}/homebrew.mxcl.{{ item }}.plist path=~/Library/LaunchAgents/homebrew.mxcl.{{ item }}.plist state=link force=yes
+  with_items: 
+    - postgresql
+    - redis
+    - mongodb
+
+- name: Setup launch agents for services
+  command: launchctl load ~/Library/LaunchAgents/homebrew.mxcl.{{ item }}.plist
+  with_items:
+    - postgresql
+    - redis
+    - mongodb
+    
 - name: Copy psqlrc file to the root
   copy: >
     src=psqlrc
