@@ -5,7 +5,7 @@
     name: "{{ item }}"
     update_homebrew: yes
     upgrade_all: yes
-    state: latest
+    state: unlinked
   with_items:
     - python
     - python3
