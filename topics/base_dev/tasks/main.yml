@@ -13,6 +13,7 @@
     - awscli
     - heroku-toolbelt
     - hh
+    - cmake
 
 - name: Install base development applications
   homebrew_cask:
