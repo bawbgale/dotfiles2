@@ -92,12 +92,12 @@ NeoBundle 'scrooloose/syntastic'
 " Supertab combines multiple plugins on one tab button (like UltiSnips and YCM)
 NeoBundle 'ervandew/supertab'
 " Auto-completion engine for multiple programming languages
-NeoBundle 'Valloric/YouCompleteMe'
+" NeoBundle 'Valloric/YouCompleteMe'
 " File manager for Vim
 NeoBundle 'scrooloose/nerdtree'
 " Comment/uncomment support plugin for multiple programming languages
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'SirVer/ultisnips'
+" NeoBundle 'SirVer/ultisnips'
 " Snippets repository
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'vim-scripts/utl.vim'
