@@ -8,7 +8,6 @@
     state: unlinked
   with_items:
     - python
-    - python3
 
 - name: Install global Python packages
   pip:
