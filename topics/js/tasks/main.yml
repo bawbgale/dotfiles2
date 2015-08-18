@@ -1,0 +1,37 @@
+---
+
+- name: Install JavaScript development packages
+  homebrew: 
+    name: "{{item}}"
+    update_homebrew: yes
+    upgrade_all: yes
+    state: latest
+  with_items:
+    - node
+    - nvm  
+
+- name: Creates .nvm folder
+  file: path=~/.nvm state=directory
+
+- name: Copy nvm-exec
+  command: zsh -lic "cp $(brew --prefix nvm)/nvm-exec ~/.nvm/"
+
+- name: Copy shell config
+  copy: >
+    src=nvm.zsh
+    dest=~/.zsh/zsh/
+    mode=644
+
+- name: Install global Javascript packages
+  npm:
+    name: "{{ item }}"
+    state: latest
+    global: yes
+  with_items:
+    - coffee-script
+    - gulp
+    - grunt
+
+- name: Install jshint (needs sudo)
+  command: "npm install -g jshint"
+  sudo: true
