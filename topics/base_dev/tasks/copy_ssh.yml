@@ -13,6 +13,7 @@
     - id_rsa.codeship
     - id_rsa.placeplayhood
     - id_rsa.pressok
+    - id_rsa.blastworks
 
 - name: Copy public ssh keys
   copy: >
@@ -25,4 +26,5 @@
     - id_rsa.codeship
     - id_rsa.placeplayhood
     - id_rsa.pressok
+    - id_rsa.blastworks
 
