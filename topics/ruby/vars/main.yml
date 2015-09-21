@@ -1,4 +1,4 @@
-ruby_deploy_user: bob
+ruby_deploy_user: "{{ansible_user_id}}"
 global_ruby_version: 2.2.2
 
 rubies:
