@@ -22,6 +22,7 @@
   with_items:
     - iterm2
     - dash
+    - virtualbox
 
 - name: Copy ack configuration file
   copy: >
