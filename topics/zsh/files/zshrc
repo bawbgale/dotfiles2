@@ -46,10 +46,10 @@ do
   source $file
 done
 
-# run ls -AG (hidden files, colorized) after cd
+# run ls -G (colorized) after cd
 function chpwd() {
     emulate -L zsh
-    ls -AG
+    ls -G
 }
 
 unset config_files
