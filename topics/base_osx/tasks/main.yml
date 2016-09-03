@@ -15,24 +15,22 @@
     state: present
   with_items:
     - 1password
-    - atom
-    - balsamiq-mockups
     - crashplan
     - dropbox
     - flowdock
     - forklift
-    - github
     - google-chrome
     - google-drive
     - iterm2
     - slack
+    - skitch
     - skype
-    - sqlexplorer
+    - sqlworkbenchj
     - sublime-text
     - tableau
-    - tableau-public
     - textmate
     - transmit
+    - typora
     - qlcolorcode
     - qlmarkdown
     - quicklook-json

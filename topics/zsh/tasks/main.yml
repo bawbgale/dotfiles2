@@ -1,6 +1,5 @@
 ---
 - name: Creates .zsh folder to contain all configuration scripts
-  file: path=~/.zsh state=directory
   file: path=~/.zsh/zsh state=directory
   file: path=~/.zsh/bin state=directory
 
