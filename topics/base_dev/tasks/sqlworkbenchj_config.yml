@@ -1,0 +1,12 @@
+---
+- name: symlink to sqlworkbench configs on Dropbox
+  file:
+    src: ~/Dropbox/Config/sqlworkbench/
+    dest: ~/.sqlworkbench
+    state: link
+
+- name: symlink to jdbc drivers
+  file:
+    src: ~/Dropbox/Config/jdbc_drivers/
+    dest: ~/jdbc_drivers
+    state: link               

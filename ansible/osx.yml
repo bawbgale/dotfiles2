@@ -3,12 +3,4 @@
     home_directory: /Users/{{ ansible_user_id }}
     downloads_directory: /{{ home_directory }}/.ansible.tmp/downloads
   roles:
-    - base_osx
     - base_dev
-    - zsh
-    - git
-    - ruby
-    - db
-    - python
-    - vim
-    - js
