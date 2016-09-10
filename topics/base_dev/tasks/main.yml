@@ -21,6 +21,7 @@
     state: present
   with_items:
     - iterm2
+    - sqlworkbenchj
     - dash
     - virtualbox
 
