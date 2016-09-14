@@ -1,13 +1,13 @@
 ---
 
 - name: Install rbenv
-  sudo_user: "{{ ruby_deploy_user }}"
-  sudo: yes
-  git: >
-    repo=https://github.com/sstephenson/rbenv.git 
-    dest=~{{ ruby_deploy_user }}/.rbenv 
-    accept_hostkey=true
-    clone=no
+  homebrew:
+    name: "{{item}}"
+    update_homebrew: yes
+    upgrade_all: yes
+    state: latest
+  with_items:
+    - rbenv
 
 - name: Ensure that .zsh exists
   sudo_user: "{{ ruby_deploy_user }}"
