@@ -39,3 +39,6 @@
     dest=~/.zsh/db/{{ item }}
   with_items:
     - aliases.zsh
+
+- name: Init postgres
+  command: initdb /usr/local/var/postgres creates=/usr/local/var/postgres/PG_VERSION
