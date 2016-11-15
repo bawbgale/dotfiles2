@@ -14,8 +14,6 @@
     - heroku-toolbelt
     - hh
     - cmake
-    - docker
-    - docker-machine
 
 - name: Install base development applications
   homebrew_cask:
@@ -24,7 +22,6 @@
   with_items:
     - iterm2
     - sqlworkbenchj
-    - dash
     - virtualbox
 
 - name: Copy ack configuration file

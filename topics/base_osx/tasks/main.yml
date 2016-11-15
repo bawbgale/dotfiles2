@@ -6,7 +6,6 @@
     upgrade_all: yes
     state: latest
   with_items:
-    - qt
     - ffmpeg
 
 - name: Install base OS X apps
