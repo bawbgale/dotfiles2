@@ -43,7 +43,7 @@
     dest=~{{ ruby_deploy_user }}/.rbenv/plugins/{{ item.name }}
     version={{ item.version }}
     accept_hostkey=true
-  with_items: rbenv_plugins
+  with_items: "{{ rbenv_plugins }}"
   sudo: true
   ignore_errors: true
 
