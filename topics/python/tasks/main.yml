@@ -5,7 +5,7 @@
     name: "{{ item }}"
     update_homebrew: yes
     upgrade_all: yes
-    state: latest
+    state: linked
   with_items:
     - python
     - python3
@@ -41,7 +41,7 @@
     upgrade_all: yes
     state: latest
   with_items:
-    - pyqt
+    - pyqt5
     - zeromq
     - freetype
     - autoenv
