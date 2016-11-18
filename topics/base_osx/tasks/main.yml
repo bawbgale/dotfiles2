@@ -1,4 +1,7 @@
 ---
+- name: Create ansible downloads directory
+  file: path="{{downloads_directory}}" state=directory
+
 - name: Install base OS X packages
   homebrew:
     name: "{{item}}"
