@@ -1,2 +1,2 @@
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
+export JAVA_HOME=$(/usr/libexec/java_home)
 export SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec/
