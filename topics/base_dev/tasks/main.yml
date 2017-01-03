@@ -23,6 +23,7 @@
     - iterm2
     - sqlworkbenchj
     - virtualbox
+    - docker
 
 - name: Copy ack configuration file
   copy: >

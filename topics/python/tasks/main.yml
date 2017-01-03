@@ -48,6 +48,7 @@
 
 - include: venv-default-2.7.yml
 - include: venv-default-3.5.yml
+- include: venv-graphlab.yml
 - include: venv-datascience.yml
 
 - name: Install Python-based tools

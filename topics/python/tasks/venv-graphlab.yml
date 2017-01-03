@@ -1,0 +1,12 @@
+---
+- name: Include vars
+  include_vars: graphlab.yml 
+
+- name: Create GraphLab virtual environment
+  pip:
+    name: "{{ item }}"
+    virtualenv: ~/.venv/graphlab
+    virtualenv_python: python2.7
+  with_items:
+    - ipython[notebook]
+    - "https://get.graphlab.com/GraphLab-Create/2.1/{{ graphlab_reg_email }}/{{ graphlab_reg_key }}/GraphLab-Create-License.tar.gz"

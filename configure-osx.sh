@@ -16,6 +16,10 @@ cp -R topics/* $ANSIBLE_CONFIGURATION_DIRECTORY/roles/
 chmod -x $ANSIBLE_CONFIGURATION_DIRECTORY/inventories/osx
 
 #ansible-playbook --ask-sudo-pass -i $ANSIBLE_CONFIGURATION_DIRECTORY/inventories/osx $ANSIBLE_CONFIGURATION_DIRECTORY/osx.yml --connection=local --tags "debug"
-ansible-playbook --ask-sudo-pass -i $ANSIBLE_CONFIGURATION_DIRECTORY/inventories/osx $ANSIBLE_CONFIGURATION_DIRECTORY/osx.yml --connection=local
+ansible-playbook --ask-sudo-pass -i \
+  $ANSIBLE_CONFIGURATION_DIRECTORY/inventories/osx \
+  $ANSIBLE_CONFIGURATION_DIRECTORY/osx.yml \
+  --connection=local \
+  --vault-password-file $CONFIG_DIRECTORY/.vault.pw
 
 brew linkapps
